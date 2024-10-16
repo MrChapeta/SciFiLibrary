@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SciFiLibrary</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__button">
+      <label for="menu">
+        <span class="header__menu-hamburger container__image"></span>
+      </label>
+      <ul class="menu-list">
+        <li class="menu-list__title">Categories</li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">Space Exploration</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">Alien Encounters</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">Futuristic Technology</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">Dystopian Worlds</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">Time Travel</a>
+        </li>
+      </ul>
+      <img src="img/LogoSciFi.svg" alt="SciFiLibrary Logo" class="container__image">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favorites.svg" alt="My Favorites" class="container__image"></a>
+      <a href="#"><img src="img/Cart.svg" alt="Shopping Cart" class="container__image"></a>
+      <a href="#"><img src="img/User.svg" alt="My Profile" class="container__image"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__title">Ready for a new adventure?</h2>
+    <p class="banner__text">Discover our collection of thrilling sci-fi stories!</p>
+    <input type="search" class="banner__search" placeholder="What's your next read?">
+  </section>
+
+  <section class="carousel">
+    <h2 class="carousel__title">Latest Releases</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/Dune.svg" alt="Dune by Frank Herbert"></div>
+        <div class="swiper-slide"><img src="img/Neuromancer.svg" alt="Neuromancer by William Gibson"></div>
+        <div class="swiper-slide"><img src="img/Hyperion.svg" alt="Hyperion by Dan Simmons"></div>
+        <div class="swiper-slide">
+          <img src="img/Foundation.svg" alt="Foundation by Isaac Asimov" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Solaris.svg" alt="Solaris by Stanislaw Lem" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/SnowCrash.svg" alt="Snow Crash by Neal Stephenson" />
+        </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__description">
+        <div class="description">
+          <h3 class="description__title">You might also like...</h3>
+          <h2 class="description__book-title">The Expanse Series</h2>
+          <p class="description__text">
+            Explore the universe in this thrilling space opera.
+          </p>
+        </div>
+        <img src="img/Expanse.svg" class="description__image" />
+      </div>
+      <div class="card__buttons">
+        <ul class="buttons">
+          <li class="buttons__item">
+            <img src="img/Favorites.svg" alt="Favorite book" />
+          </li>
+          <li class="buttons__item">
+            <img src="img/Cart.svg" alt="Add to cart" />
+          </li>
+        </ul>
+        <a href="#" class="buttons__link">Learn more</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="carousel">
+    <h2 class="carousel__title">Best Sellers</h2>
+    <div class="swiper">
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/Dune.svg" alt="Dune by Frank Herbert"></div>
+        <div class="swiper-slide"><img src="img/Neuromancer.svg" alt="Neuromancer by William Gibson"></div>
+        <div class="swiper-slide"><img src="img/Hyperion.svg" alt="Hyperion by Dan Simmons"></div>
+        <div class="swiper-slide"><img src="img/Foundation.svg" alt="Foundation by Isaac Asimov"></div>
+        <div class="swiper-slide"><img src="img/Solaris.svg" alt="Solaris by Stanislaw Lem"></div>
+        <div class="swiper-slide"><img src="img/SnowCrash.svg" alt="Snow Crash by Neal Stephenson"></div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <div class="card__description">
+        <div class="description">
+          <img src="img/Stars.svg" alt="5 Star Rating">
+          <h3 class="description__title">Author of the Month</h3>
+          <h2 class="description__book-title">Isaac Asimov</h2>
+          <p class="description__text">The master of science fiction, known for his Foundation series and Robot novels.</p>
+        </div>
+        <img src="img/Asimov.svg" class="description__image">
+      </div>
+
+      <div class="card__buttons">
+        <ul class="buttons">
+          <li class="buttons__item"><img src="img/Favorites.svg" alt="Favorite book"></li>
+          <li class="buttons__item"><img src="img/Cart.svg" alt="Add to cart"></li>
+        </ul>
+        <a href="#" class="buttons__link">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="topics">
+    <h2 class="topics__title">RECENTLY VISITED TOPICS</h2>
+    <ul class="topics__list">
+      <li class="topics__item"><a href="#" class="topics__link">Artificial Intelligence</a></li>
+      <li class="topics__item">
+        <a href="#" class="topics__link">Quantum Computing</a>
+      </li>
+      <li class="topics__item">
+        <a href="#" class="topics__link">Cyberpunk</a>
+      </li>
+      <li class="topics__item">
+        <a href="#" class="topics__link">Space Colonization</a>
+      </li>
+      <li class="topics__item">
+        <a href="#" class="topics__link">Robotics</a>
+      </li>
+      <li class="topics__item">
+        <a href="#" class="topics__link">Virtual Reality</a>
+      </li>
+      <li class="topics__item">
+        <a href="#" class="topics__link">Dystopia</a>
+      </li>
+      <li class="topics__item">
+        <a href="#" class="topics__link">Nanotechnology</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2 class="contact__title">Stay Updated!</h2>
+    <p class="contact__text">
+      Get the latest updates on new releases, special offers, and more.
+    </p>
+    <input type="email" placeholder="Enter your email" class="contact__email" />
+  </section>
+
+  <hr />
+
+  <footer class="footer">
+    <h2 class="footer__title">SciFiLibrary Group</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 2,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
