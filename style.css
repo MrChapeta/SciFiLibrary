@@ -1,0 +1,62 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #1A1A2E;
+    --branco: #FFFFFF;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(120deg, #0F0C29 30%, #302B63 80%, #24243E);
+    --verde-neon: #39FF14;
+    --cinza-futurista: #8D99AE;
+    --fonte-principal: "Poppins", sans-serif;
+    --fonte-secundaria: "Orbitron", sans-serif;
+    --azul: #1B1F3B;
+    --roxo: #6C63FF;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--cinza-futurista);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fonte-secundaria);
+    color: var(--verde-neon);
+}
+
+a {
+    color: var(--roxo);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--laranja);
+}
+
+button, input {
+    font-family: var(--fonte-principal);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+hr {
+    border-color: var(--cinza-futurista);
+}
+
+::selection {
+    background-color: var(--verde-neon);
+    color: var(--azul);
+}
